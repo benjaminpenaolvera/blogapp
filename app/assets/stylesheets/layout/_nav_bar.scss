@@ -1,4 +1,4 @@
-@import "base.scss";
+@import '../base/_base.scss';
 
 .cool-link::after {
   content: '';
@@ -12,64 +12,6 @@
 .cool-link:hover::after {
   width: 100%;
   transition: width .3s;
-}
-
-.devise-form {
-  background-color: #FAFAFA;
-  margin: 3em auto;
-  padding: 0 1em;
-  max-width: 370px;
-
-  h1 {
-    color: #5E5E5E;
-    text-align: center;
-    padding: 1em 0;
-  }
-
-  form {
-    padding: 0 1.5em;
-  }
-
-  .form-item {
-    margin-bottom: 0.75em;
-    width: 100%;
-
-    input {
-      background: #FAFAFA;
-      border: none;
-      border-bottom: 2px solid $green-light;
-      color: #666;
-      font-size: 1em;
-      height: 50px;
-      transition: border-color 0.3s;
-      width: 100%;
-
-      &:focus {
-        border-bottom: 2px solid $green-dark;
-        outline: none;
-        }
-
-    .button-panel {
-      margin: 2em 0 0;
-      width: 100%;
-      }
-    }
-  }
-
-  .form-footer {
-    font-size: 1em;
-    padding: 2em 0;
-    text-align: center;
-
-    a {
-      color: #8C8C8C;
-      text-decoration: none;
-      transition: border-color 0.3s;
-      &:hover {
-        border-bottom: 1px dotted #8C8C8C;
-      }
-    }
-  }
 }
 
 nav {
