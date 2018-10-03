@@ -1,11 +1,19 @@
 <nav>
   <div class="logo">
-    <a href="#">BRAND</a>
+    <%= link_to 'BRAND', root_path %>
   </div>
   <ul>
-    <li><%= link_to 'home', '#', class: 'cool-link' %></li>
-    <li><%= link_to 'about', '#', class: 'cool-link' %></li>
-    <li><%= link_to 'contact', '#', class: 'cool-link' %></li>
+    <li><%= link_to 'inicio', root_path, class: 'cool-link' %></li>
+    <li><%= link_to '¿Quienes somos?', '#', class: 'cool-link' %></li>
+    <li><%= link_to 'contacto', '#', class: 'cool-link' %></li>
+    <li> | </li>
+    <% if admin_user_signed_in? %>
+      <li class="cool-link"><%= link_to(current_admin_user.email, admin_users_path) %></li>
+      <li class="cool-link"><%=  link_to('cerrar sesion', destroy_admin_user_session_path, method: :delete)  %></li>
+      <% else %>
+      <li class="cool-link"><%= link_to('inicia sesion', new_admin_user_session_path) %></li>
+      <li class="cool-link"><%= link_to('registrate', new_admin_user_registration_path) %></li>
+    <% end %>
   </ul>
 </nav>
 

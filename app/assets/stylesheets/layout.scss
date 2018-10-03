@@ -37,7 +37,7 @@
     input {
       background: #FAFAFA;
       border: none;
-      border-bottom: 2px solid #E9E9E9;
+      border-bottom: 2px solid $green-light;
       color: #666;
       font-size: 1em;
       height: 50px;
@@ -45,7 +45,7 @@
       width: 100%;
 
       &:focus {
-        border-bottom: 2px solid #C0C0C0;
+        border-bottom: 2px solid $green-dark;
         outline: none;
         }
 
@@ -75,7 +75,7 @@
 nav {
   background-color: $green-dark;
   margin: 0;
-  height: 40px;
+  height: 60px;
 
   &:after {
     content: '';
@@ -101,16 +101,16 @@ nav {
   ul {
     float: right;
     margin: 0 auto;
-    margin-right: 5em;
     position: relative;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-20%, -50%);
 
     li {
       float: left;
       margin-left: 15px;
       display: inline-block;
       text-decoration: none;
+      color: white;
 
       a {
         color: white;
@@ -119,6 +119,7 @@ nav {
 
         &:hover {
           text-decoration: none;
+          color: white;
         }
 
         &:visited {
