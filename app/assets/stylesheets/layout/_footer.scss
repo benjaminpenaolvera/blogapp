@@ -9,27 +9,21 @@ footer {
   width: 100%;
 
   hr {
-    display: inline-block;
     width: 6rem;
+    margin-bottom: 4rem;
     border-top: 2px solid $orange;
-  }
-
-  p {
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 2rem 0 2rem 0;
-    font-size: 1.2rem;
-    letter-spacing: .2rem;
-    font-weight: 800;
   }
 
   ul {
     text-align: center;
+    display: contents;
 
     li {
       list-style: none;
       display: inline-block;
-      margin-right: 2rem;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+      font-size: 1.5rem;
     }
   }
 }
