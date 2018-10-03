@@ -1,0 +1,35 @@
+@import "../base/_base.scss";
+
+footer {
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  padding: 0 0 1rem 0;
+  width: 100%;
+
+  hr {
+    display: inline-block;
+    width: 6rem;
+    border-top: 2px solid $orange;
+  }
+
+  p {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 2rem 0 2rem 0;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    font-weight: 800;
+  }
+
+  ul {
+    text-align: center;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 2rem;
+    }
+  }
+}
