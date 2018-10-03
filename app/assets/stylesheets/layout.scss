@@ -1,3 +1,19 @@
+@import "base.scss";
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: $green-light;
+  transition: width .3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
 .devise-form {
   background-color: #FAFAFA;
   margin: 3em auto;
@@ -57,7 +73,7 @@
 }
 
 nav {
-  background-color: #068587;
+  background-color: $green-dark;
   margin: 0;
   height: 40px;
 
@@ -99,6 +115,16 @@ nav {
       a {
         color: white;
         text-align: center;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:visited {
+          color: white;
+          text-decoration: none;
+        }
       }
     }
   }
