@@ -15,7 +15,7 @@
 }
 
 nav {
-  background-color: $green-dark;
+  border-bottom: solid 1px $green-dark;
   margin: 0;
   height: 60px;
 
@@ -34,7 +34,8 @@ nav {
     transform: translate(50%, -50%);
 
     a {
-      color: white;
+      color: $blue-dark;
+      font-weight: bold;
       text-decoration: none;
       text-align: center;
     }
@@ -52,20 +53,20 @@ nav {
       margin-left: 15px;
       display: inline-block;
       text-decoration: none;
-      color: white;
+      color: $blue-dark;
 
       a {
-        color: white;
+        color: $blue-dark;
         text-align: center;
         text-transform: uppercase;
 
         &:hover {
           text-decoration: none;
-          color: white;
+          color: $blue-dark;
         }
 
         &:visited {
-          color: white;
+          color: $blue-dark;
           text-decoration: none;
         }
       }
