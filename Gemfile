@@ -7,6 +7,8 @@ gem 'friendly_id', '~> 5.0.0'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'pg', '~> 0.18.4'
+gem 'pry'
+gem 'pry-rails'
 gem 'rails', '4.2.8'
 gem 'sass-rails', '>= 3.2'
 gem 'sdoc', '~> 0.4.0', group: :doc

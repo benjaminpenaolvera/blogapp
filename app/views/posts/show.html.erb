@@ -1,3 +1,21 @@
-<h1><%= @post.title %></h1>
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="show_post">
+      <div class="header">
+        <p class='lead' ><%= @post.created_at.strftime('%B %d, %Y') %></p>
+        <h1><%= @post.title %></h1>
+        <hr />
+      </div>
 
-<%= render "posts/partials/footer" %>
+      <div class="body">
+        <div class="image">
+          <img src="https://cdn-images-1.medium.com/max/1600/0*bJkBSHvwjYAcO4vi" alt="">
+        </div>
+        <div class="text">
+          <%= @post.content %>
+        </div>
+      </div>
+      <%= render "posts/partials/footer" %>
+    </div>
+  </div>
+</div>

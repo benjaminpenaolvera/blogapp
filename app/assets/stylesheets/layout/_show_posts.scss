@@ -1,0 +1,54 @@
+@import '../base/_base.scss';
+
+.show_post {
+  padding: 1.5rem 0 0 0;
+
+  .header  {
+    margin-top: 1.5rem;
+    text-align: center;
+    max-width: 740px;
+
+    h1 {
+      letter-spacing: .2rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: gray;
+      font-size: 1.3rem;
+      margin-bottom: -1.8rem;
+    }
+
+    hr {
+      padding: 2.2rem 0 0 0;
+      width: 6rem;
+      border-top: 2px solid $orange;
+    }
+  }
+
+  .body {
+
+    img {
+      height: 100%;
+      width: 100%;
+      margin-bottom: 4rem;
+    }
+
+    .text {
+      margin: 1rem 0 0 0;
+      padding: 0 0 0 0;
+      text-align: justify;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 2.8rem;
+      font-size: 1.6rem;
+      letter-spacing: .2rem;
+
+      &::first-letter {
+        font-size: 3rem;
+        text-transform: capitalize;
+        font-weight: 600
+      }
+    }
+  }
+}
