@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'bootstrap-sass', '~> 3.3.7'
+gem 'carrierwave', '~> 1.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
 gem 'friendly_id', '~> 5.0.0'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
+gem "mini_magick"
 gem 'pg', '~> 0.18.4'
 gem 'pry'
 gem 'pry-rails'

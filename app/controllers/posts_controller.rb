@@ -11,9 +11,11 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    binding.pry
   end
 
   def create
+    binding.pry
     @post = Post.new(post_params)
     if @post.valid?
       @post.save
@@ -26,6 +28,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :content, :tags, :status)
+    params.require(:post).permit(:title, :content, :tags, :status, :header)
   end
 end

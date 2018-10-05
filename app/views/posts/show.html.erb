@@ -9,7 +9,7 @@
 
       <div class="body">
         <div class="image">
-          <img src="https://cdn-images-1.medium.com/max/1600/0*bJkBSHvwjYAcO4vi" alt="">
+          <%= image_tag(@post.header_url) if @post.header? %>
         </div>
         <div class="text">
           <%= @post.content %>
