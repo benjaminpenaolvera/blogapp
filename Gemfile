@@ -5,6 +5,7 @@ gem 'carrierwave', '~> 1.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
 gem 'friendly_id', '~> 5.0.0'
+gem "haml-rails", "~> 1.0"
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem "mini_magick"
