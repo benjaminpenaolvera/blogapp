@@ -5,11 +5,15 @@
     <%= f.label :title %>
     <%= f.text_field :title  %>
 
+    <%= f.label :header %>
     <%= f.file_field :header %>
 
     <%= f.label :content %>
-    <%= f.text_area :content %>3
+    <%= f.text_area :content %>
 
-    <%= f.submit "Guardar cambios", class: 'btn btn-primary' %>
+    <%= f.label :tags %>
+    <%= f.text_field :tags%>
+
+    <%= f.submit %>
   <% end %>
 </div>
