@@ -1,0 +1,75 @@
+@import '../base/_base.scss';
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: $green-light;
+  transition: width .3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+nav {
+  border-bottom: solid 1px $green-dark;
+  margin: 0;
+  height: 60px;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .logo {
+    float: left;
+    display: inline-block;
+    margin-left: 5em;
+    position: relative;
+    top: 50%;
+    transform: translate(50%, -50%);
+
+    a {
+      color: $blue-dark;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+
+  ul {
+    float: right;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translate(-20%, -50%);
+
+    li {
+      float: left;
+      margin-left: 15px;
+      display: inline-block;
+      text-decoration: none;
+      color: $blue-dark;
+
+      a {
+        color: $blue-dark;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: none;
+          color: $blue-dark;
+        }
+
+        &:visited {
+          color: $blue-dark;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

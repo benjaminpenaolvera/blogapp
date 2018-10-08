@@ -1,0 +1,15 @@
+<h1>Edit post</h1>
+
+<div class="row">
+  <%= form_for(@post) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title  %>
+
+    <%= f.file_field :header %>
+
+    <%= f.label :content %>
+    <%= f.text_area :content %>3
+
+    <%= f.submit "Guardar cambios", class: 'btn btn-primary' %>
+  <% end %>
+</div>

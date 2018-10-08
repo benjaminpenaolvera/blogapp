@@ -1,11 +1,9 @@
 <h1>Posts INDEX</h1>
-<%=  link_to('close session', destroy_admin_user_session_path, method: :delete)  %>
-<%=  link_to('create post', new_post_path)  %>
 
 <% if @posts.nil? %>
   <p>No hay posts por imprimir</p>
 <% else %>
   <%= @posts.each do |p| %>
-  <%= p.title %>
+  <%= link_to(p.title, post_path(p) ) %>
   <% end %>
 <% end %>
