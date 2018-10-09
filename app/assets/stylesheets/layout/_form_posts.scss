@@ -1,0 +1,66 @@
+@import '../base/_base.scss';
+
+.new_post_form {
+
+  .title_form {
+    margin-bottom: 1.2rem;
+
+    label {
+      color: $blue-dark;
+      text-transform: uppercase;
+    }
+
+    input {
+      background: white;
+      border: none;
+      border-bottom: 2px solid #000;
+      color: #666;
+      font-size: 1em;
+      height: 50px;
+      transition: border-color 0.3s;
+      width: 100%;
+
+      &:focus {
+        border-bottom: 2px solid $green-dark;
+        outline: none;
+      }
+    }
+  }
+
+  .header_form {
+    margin-bottom: 1.2rem;
+
+    label {
+      color: $blue-dark;
+      text-transform: uppercase;
+    }
+
+    input {
+
+    }
+  }
+
+  .content_form {
+    margin-bottom: 1.2rem;
+
+    label {
+      color: $blue-dark;
+      text-transform: uppercase;
+    }
+
+    textarea {
+      background: white;
+      border: none;
+      border-bottom: 2px solid #000;
+      color: #666;
+      font-size: 1em;
+      transition: border-color 0.3s;
+      width: 100%;
+
+      &:focus {
+        border-bottom: 2px solid $green-dark;
+        outline: none;
+      }
+    }
+  }
+}
