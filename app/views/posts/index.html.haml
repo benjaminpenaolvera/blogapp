@@ -1,7 +1,9 @@
 %h1 Post INDEX
 
-- if @posts.nil?
-  %p No hay posts por mostrar
-- else
-  - @posts.each do |p|
-    = link_to(p.title, post_path(p))
+.row
+  - if @posts.nil?
+    %p No hay posts por mostrar
+  - else
+    - @posts.each do |p|
+      .col-md-4
+        = link_to(p.title, post_path(p))

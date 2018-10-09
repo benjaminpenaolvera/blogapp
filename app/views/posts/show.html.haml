@@ -9,7 +9,10 @@
         %hr/
       .body
         .image
-          = image_tag(@post.header_url) if @post.header?
+          - if @post.header?
+            = image_tag(@post.header_url)
+          - else
+            = image_tag('default.jpeg')
         .text
           = @post.content
       = render "posts/partials/footer"
