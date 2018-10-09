@@ -6,4 +6,11 @@
   - else
     - @posts.each do |p|
       .col-md-4
-        = link_to(p.title, post_path(p))
+        .card_container
+          .image_header
+            - if p.header?
+              = link_to image_tag(p.header_url(:header)), post_path(p)
+            - else
+              = link_to image_tag('default.jpeg'), post_path(p)
+          .title_container
+            = link_to(p.title, post_path(p))

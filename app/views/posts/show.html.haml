@@ -10,7 +10,7 @@
       .body
         .image
           - if @post.header?
-            = image_tag(@post.header_url)
+            = image_tag(@post.header_url(:header))
           - else
             = image_tag('default.jpeg')
         .text

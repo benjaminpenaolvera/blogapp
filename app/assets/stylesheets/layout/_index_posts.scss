@@ -1,0 +1,57 @@
+@import '../base/_base.scss';
+
+.card_container {
+  border-style: solid 1px;
+  max-height: 180px;
+  margin-bottom: 6rem;
+
+  .image_header {
+    a {
+      margin: 0;
+      padding: 0;
+
+    }
+
+    img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      object-position: center center;
+      opacity: 1;
+
+      &:hover {
+        opacity: .6;
+        transition: opacity .2s ease-out;
+        -moz-transition: opacity .2s ease-out;
+        -webkit-transition: opacity .2s ease-out;
+        -o-transition: opacity .2s ease-out;
+      }
+    }
+  }
+
+  .title_container {
+    padding: 0 0 0 1rem;
+      text-transform: uppercase;
+      transform: translateY(-120%);
+      color: white;
+      font-size: 1.4rem;
+      text-decoration: noce;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+
+        &:hover {
+          text-decoration: none;
+          color: inherit;
+        }
+
+        &:visited {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+}
