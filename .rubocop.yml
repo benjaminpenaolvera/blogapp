@@ -1,0 +1,15 @@
+Style/Documentation:
+  Include:
+    - app/models/**
+    - lib/**/*
+
+AllCops:
+    Exclude:
+      - db/**/*
+      - config/initializers/**/*
+      - config/environments/**/*
+      - config/application.rb
+      - app/models/ckeditor/**/*
+      - app/uploaders/**/*
+      - Gemfile
+      - Rakefile

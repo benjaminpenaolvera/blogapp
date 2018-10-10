@@ -14,6 +14,7 @@ gem 'pg', '~> 0.18.4'
 gem 'pry'
 gem 'pry-rails'
 gem 'rails', '4.2.8'
+gem 'rubocop', '~> 0.59.2', require: false
 gem 'sass-rails', '>= 3.2'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'uglifier', '>= 1.3.0'
