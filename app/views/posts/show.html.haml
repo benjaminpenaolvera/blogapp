@@ -14,5 +14,5 @@
           - else
             = image_tag('default.jpeg')
         .text
-          = @post.content
+          = @post.content.html_safe
       = render "posts/partials/footer"

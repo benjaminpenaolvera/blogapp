@@ -1,7 +1,7 @@
 @import '../base/_base.scss';
 
 .new_post_container {
-  margin-top: 4rem;
+  margin-top: 1.6rem;
   padding: 1.4rem 1.4rem 1.4rem 1.4rem;
   border-radius: 2.5%;
 
@@ -9,13 +9,11 @@
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    text-align: left;
     padding-bottom: 3px;
 	  margin-bottom: 20px;
 
     h1 {
       text-align: center;
-
     }
   }
 }

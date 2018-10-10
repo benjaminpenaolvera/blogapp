@@ -17,7 +17,7 @@ class PostsController < ApplicationController
     if @post.valid?
       @post.save
       flash[:success] = 'Post created!'
-      redirect_to root_url, notice: 'Post created'
+      redirect_to @post, notice: 'Post created'
     else
       render :new
     end
